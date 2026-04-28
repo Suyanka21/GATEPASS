@@ -51,7 +51,7 @@ export function GuardHome({ state, dispatch }: Props) {
 
 function ActionButton({ icon, label, hint, danger, onClick }: { icon: React.ReactNode; label: string; hint: string; danger?: boolean; onClick: () => void }) {
   return (
-    <button className={`focus-ring group flex min-h-28 items-center gap-4 border p-4 text-left shadow-panel transition-all hover:-translate-y-1 hover:shadow-glow ${danger ? "border-destructive bg-destructive/10" : "border-border bg-card"}`} onClick={onClick}>
+    <button aria-label={label} className={`focus-ring group flex min-h-28 items-center gap-4 border p-4 text-left shadow-panel transition-all hover:-translate-y-1 hover:shadow-glow ${danger ? "border-destructive bg-destructive/10" : "border-border bg-card"}`} onClick={onClick}>
       <span className={`grid h-12 w-12 place-items-center border ${danger ? "border-destructive text-destructive" : "border-primary text-primary"}`}>{icon}</span>
       <span><span className="block font-display text-2xl font-bold text-foreground">{label}</span><span className="text-sm text-muted-foreground">{hint}</span></span>
     </button>
