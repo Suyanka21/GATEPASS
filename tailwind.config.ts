@@ -39,6 +39,18 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -84,6 +96,15 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "gate-scan": "gate-scan 1.9s ease-in-out infinite",
+      },
+      boxShadow: {
+        panel: "var(--shadow-panel)",
+        glow: "var(--shadow-glow)",
+      },
+      fontFamily: {
+        display: ["Arial Black", "Arial Narrow", "system-ui", "sans-serif"],
+        body: ["Aptos", "Segoe UI", "system-ui", "sans-serif"],
       },
     },
   },
