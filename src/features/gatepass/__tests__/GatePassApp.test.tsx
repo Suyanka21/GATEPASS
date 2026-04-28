@@ -11,7 +11,7 @@ describe("GatePass UI", () => {
 
   it("shows explicit feedback for repeated partial form submission", () => {
     render(<GatePassApp />);
-    fireEvent.click(screen.getByRole("button", { name: "Walk-in" }));
+    fireEvent.click(screen.getAllByRole("button", { name: "Walk-in" })[0]);
     fireEvent.click(screen.getByRole("button", { name: "Log entry" }));
     expect(screen.getByRole("alert")).toHaveTextContent("Visitor name is required");
   });
